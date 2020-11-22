@@ -10,16 +10,21 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid x:Name="RootGrid">
             <StackPanel>
-                <TextBlock FontSize="36" Style="{StaticResource TitleTextBlockStyle}"> DJI Windows SDK Activating</TextBlock>
-                <TextBlock Style="{StaticResource BodyTextBlockStyle}"> Before using DJIWindowsSDK APIs, DJIWindowsSDK should be activated by APP Key. Read the README.md for more details. </TextBlock>
+                <TextBlock FontSize="36" Style="{StaticResource TitleTextBlockStyle}"></TextBlock>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"></TextBlock>
                 <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
-                    <TextBlock FontSize="20" > Activating State: </TextBlock>
-                    <TextBlock FontSize="20"  Name="activateStateTextBlock"> Not Activated.</TextBlock>
+                    <TextBlock FontSize="20" ></TextBlock>
+                    <TextBlock FontSize="20"  Name="activateStateTextBlock"></TextBlock>
 
                 </StackPanel>
-                <TextBlock> Activating Code: </TextBlock>
-                <TextBox Name="activatingCodeTextBox" Width="300" HorizontalAlignment="Left"></TextBox>
-                <Button Margin="0,5,0,0" Click="RegisterButton_Click"> Activate </Button>
+                <TextBlock Margin="50,5,0,0" FontSize="30" Text="用户登录："></TextBlock>
+                <TextBlock  Margin="0,5,0,0" Text="账号：" />
+                <TextBox Name="userName" Width="300" HorizontalAlignment="Left" PlaceholderText="请输入用户名"></TextBox>
+                <TextBlock  Text="密码：" Margin="0,5,0,0" />
+
+                <PasswordBox Name="passWord" Width="300" HorizontalAlignment="Left" PlaceholderText="请输入密码"></PasswordBox>
+
+                <Button Margin="0,5,0,0" Click="RegisterButton_Click" >登录</Button>
                 <TextBlock 
                      Name="activationInformation"
                      ScrollViewer.VerticalScrollBarVisibility="Visible"

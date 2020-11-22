@@ -36,7 +36,7 @@ namespace DJIWindowsSDKSample
             new SDKModuleSampleItems() {
                 header = "Activation", items = new List<KeyValuePair<String, Type>>()
                 {
-                    new KeyValuePair<string, Type>("Activating DJIWindowsSDK", typeof(DJISDKInitializing.ActivatingPage)),
+                    new KeyValuePair<string, Type>("Login", typeof(DJISDKInitializing.ActivatingPage)),
                 },
             },
             new SDKModuleSampleItems() {

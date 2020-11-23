@@ -34,9 +34,9 @@ namespace DJIWindowsSDKSample
         private List<SDKModuleSampleItems> navigationModules = new List<SDKModuleSampleItems>
         {
             new SDKModuleSampleItems() {
-                header = "Activation", items = new List<KeyValuePair<String, Type>>()
+                header = "用户登录", items = new List<KeyValuePair<String, Type>>()
                 {
-                    new KeyValuePair<string, Type>("Login", typeof(DJISDKInitializing.ActivatingPage)),
+                    new KeyValuePair<string, Type>("用户登录", typeof(DJISDKInitializing.ActivatingPage)),
                 },
             },
             new SDKModuleSampleItems() {

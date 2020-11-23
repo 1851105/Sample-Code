@@ -58,12 +58,12 @@ namespace DJIWindowsSDKSample
                     new KeyValuePair<string, Type>("Waypoint Mission", typeof(WaypointHandling.WaypointMissionPage)),
                 },
             },
-            new SDKModuleSampleItems() {
-                header = "Account", items = new List<KeyValuePair<String, Type>>()
-                {
-                    new KeyValuePair<string, Type>("Account Management", typeof(UserAccount.UserAccountPage)),
-                },
-            },
+            //new SDKModuleSampleItems() {
+                //header = "Account", items = new List<KeyValuePair<String, Type>>()
+                //{
+                 //   new KeyValuePair<string, Type>("Account Management", typeof(UserAccount.UserAccountPage)),
+               // },
+           // },
             new SDKModuleSampleItems() {
                 header = "Flysafe", items = new List<KeyValuePair<String, Type>>()
                 {
